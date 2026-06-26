@@ -26,12 +26,6 @@ public class HttpServer {
         serverSocket = new ServerSocket(port);
         running = true;
 
-        System.out.printf(
-                "HTTP Server started on port %d with %d threads%n",
-                port,
-                threadPoolSize
-        );
-
         try {
             while (running) {
                 Socket socket = serverSocket.accept();
