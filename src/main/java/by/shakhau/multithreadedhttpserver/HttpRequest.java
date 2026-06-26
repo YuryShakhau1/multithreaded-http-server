@@ -14,12 +14,9 @@ public class HttpRequest {
     }
 
     public static HttpRequest parse(String requestLine) {
-
         String[] parts = requestLine.split(" ");
-
         String method = parts[0];
         String path = parts[1];
-
         return new HttpRequest(method, path);
     }
 }
